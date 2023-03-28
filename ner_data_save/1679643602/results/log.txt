@@ -1,0 +1,655 @@
+2023-03-24 15:40:02,868:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1521112368', dev_ann_data='./ner_data/original', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.001, mode='train', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='ner_data', train_ann_data='./ner_data/original', train_data='ner_data', update_embedding=True)
+2023-03-24 15:40:02,870:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:44: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2023-03-24 15:40:02,870:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:44: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2023-03-24 15:40:02,880:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:52: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2023-03-24 15:40:02,880:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:52: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2023-03-24 15:40:02,917:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:60: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2023-03-24 15:40:02,917:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:60: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2023-03-24 15:40:02,932:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:64: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2023-03-24 15:40:02,932:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:64: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2023-03-24 15:40:02,934:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:71: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2023-03-24 15:40:02,934:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:71: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2023-03-24 15:40:02,935:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2023-03-24 15:40:02,935:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2023-03-24 15:40:03,032:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:958: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+2023-03-24 15:40:03,032:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:958: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+2023-03-24 15:40:03,045:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:962: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2023-03-24 15:40:03,045:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:962: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2023-03-24 15:40:03,064:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2023-03-24 15:40:03,064:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2023-03-24 15:40:03,251:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:76: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2023-03-24 15:40:03,251:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:76: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2023-03-24 15:40:03,251:WARNING: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2023-03-24 15:40:03,251:WARNING: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2023-03-24 15:40:03,569:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:106: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2023-03-24 15:40:03,569:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:106: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2023-03-24 15:40:03,576:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:117: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2023-03-24 15:40:03,576:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:117: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2023-03-24 15:40:04,964:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:136: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2023-03-24 15:40:04,964:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:136: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2023-03-24 15:40:04,966:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:154: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2023-03-24 15:40:04,966:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:154: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2023-03-24 15:40:04,966:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:154: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2023-03-24 15:40:04,966:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:154: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2023-03-24 15:40:04,998:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:156: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2023-03-24 15:40:04,998:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:156: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2023-03-24 15:40:06,550:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:144: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+2023-03-24 15:40:06,550:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:144: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+2023-03-24 15:40:06,551:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:145: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+2023-03-24 15:40:06,551:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:145: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+2023-03-24 15:40:15,492:INFO: 2023-03-24 15:40:07 epoch 1, step 1, loss: 174.7, global_step: 1
+2023-03-24 15:40:15,492:INFO: 2023-03-24 15:40:07 epoch 1, step 1, loss: 174.7, global_step: 1
+2023-03-24 15:45:46,640:INFO: 2023-03-24 15:40:07 epoch 1, step 45, loss: 37.81, global_step: 45
+2023-03-24 15:45:46,640:INFO: 2023-03-24 15:40:07 epoch 1, step 45, loss: 37.81, global_step: 45
+2023-03-24 15:45:47,700:INFO: ===========validation / test===========
+2023-03-24 15:45:47,700:INFO: ===========validation / test===========
+2023-03-24 15:47:13,860:INFO: 2023-03-24 15:47:06 epoch 2, step 1, loss: 31.6, global_step: 46
+2023-03-24 15:47:13,860:INFO: 2023-03-24 15:47:06 epoch 2, step 1, loss: 31.6, global_step: 46
+2023-03-24 15:53:24,050:INFO: 2023-03-24 15:47:06 epoch 2, step 45, loss: 34.12, global_step: 90
+2023-03-24 15:53:24,050:INFO: 2023-03-24 15:47:06 epoch 2, step 45, loss: 34.12, global_step: 90
+2023-03-24 15:53:24,930:INFO: ===========validation / test===========
+2023-03-24 15:53:24,930:INFO: ===========validation / test===========
+2023-03-24 15:55:08,345:INFO: 2023-03-24 15:54:58 epoch 3, step 1, loss: 29.99, global_step: 91
+2023-03-24 15:55:08,345:INFO: 2023-03-24 15:54:58 epoch 3, step 1, loss: 29.99, global_step: 91
+2023-03-24 16:01:55,370:INFO: 2023-03-24 15:54:58 epoch 3, step 45, loss: 12.65, global_step: 135
+2023-03-24 16:01:55,370:INFO: 2023-03-24 15:54:58 epoch 3, step 45, loss: 12.65, global_step: 135
+2023-03-24 16:01:56,632:INFO: ===========validation / test===========
+2023-03-24 16:01:56,632:INFO: ===========validation / test===========
+2023-03-24 16:03:39,877:INFO: 2023-03-24 16:03:33 epoch 4, step 1, loss: 21.56, global_step: 136
+2023-03-24 16:03:39,877:INFO: 2023-03-24 16:03:33 epoch 4, step 1, loss: 21.56, global_step: 136
+2023-03-24 16:10:42,925:INFO: 2023-03-24 16:03:33 epoch 4, step 45, loss: 25.17, global_step: 180
+2023-03-24 16:10:42,925:INFO: 2023-03-24 16:03:33 epoch 4, step 45, loss: 25.17, global_step: 180
+2023-03-24 16:10:44,032:INFO: ===========validation / test===========
+2023-03-24 16:10:44,032:INFO: ===========validation / test===========
+2023-03-24 16:12:25,611:INFO: 2023-03-24 16:12:13 epoch 5, step 1, loss: 23.66, global_step: 181
+2023-03-24 16:12:25,611:INFO: 2023-03-24 16:12:13 epoch 5, step 1, loss: 23.66, global_step: 181
+2023-03-24 16:19:18,818:INFO: 2023-03-24 16:12:13 epoch 5, step 45, loss: 22.01, global_step: 225
+2023-03-24 16:19:18,818:INFO: 2023-03-24 16:12:13 epoch 5, step 45, loss: 22.01, global_step: 225
+2023-03-24 16:19:19,808:INFO: ===========validation / test===========
+2023-03-24 16:19:19,808:INFO: ===========validation / test===========
+2023-03-24 16:20:46,614:INFO: 2023-03-24 16:20:39 epoch 6, step 1, loss: 21.32, global_step: 226
+2023-03-24 16:20:46,614:INFO: 2023-03-24 16:20:39 epoch 6, step 1, loss: 21.32, global_step: 226
+2023-03-24 16:26:43,540:INFO: 2023-03-24 16:20:39 epoch 6, step 45, loss: 17.6, global_step: 270
+2023-03-24 16:26:43,540:INFO: 2023-03-24 16:20:39 epoch 6, step 45, loss: 17.6, global_step: 270
+2023-03-24 16:26:44,354:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\training\saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+2023-03-24 16:26:44,354:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\training\saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+2023-03-24 16:26:44,763:INFO: ===========validation / test===========
+2023-03-24 16:26:44,763:INFO: ===========validation / test===========
+2023-03-24 16:28:10,999:INFO: 2023-03-24 16:28:03 epoch 7, step 1, loss: 19.67, global_step: 271
+2023-03-24 16:28:10,999:INFO: 2023-03-24 16:28:03 epoch 7, step 1, loss: 19.67, global_step: 271
+2023-03-24 16:33:48,433:INFO: 2023-03-24 16:28:03 epoch 7, step 45, loss: 24.28, global_step: 315
+2023-03-24 16:33:48,433:INFO: 2023-03-24 16:28:03 epoch 7, step 45, loss: 24.28, global_step: 315
+2023-03-24 16:33:49,719:INFO: ===========validation / test===========
+2023-03-24 16:33:49,719:INFO: ===========validation / test===========
+2023-03-24 16:35:18,680:INFO: 2023-03-24 16:35:05 epoch 8, step 1, loss: 14.52, global_step: 316
+2023-03-24 16:35:18,680:INFO: 2023-03-24 16:35:05 epoch 8, step 1, loss: 14.52, global_step: 316
+2023-03-24 16:40:53,162:INFO: 2023-03-24 16:35:05 epoch 8, step 45, loss: 16.12, global_step: 360
+2023-03-24 16:40:53,162:INFO: 2023-03-24 16:35:05 epoch 8, step 45, loss: 16.12, global_step: 360
+2023-03-24 16:40:54,196:INFO: ===========validation / test===========
+2023-03-24 16:40:54,196:INFO: ===========validation / test===========
+2023-03-24 16:42:13,749:INFO: 2023-03-24 16:42:04 epoch 9, step 1, loss: 13.01, global_step: 361
+2023-03-24 16:42:13,749:INFO: 2023-03-24 16:42:04 epoch 9, step 1, loss: 13.01, global_step: 361
+2023-03-24 16:47:54,391:INFO: 2023-03-24 16:42:04 epoch 9, step 45, loss: 16.2, global_step: 405
+2023-03-24 16:47:54,391:INFO: 2023-03-24 16:42:04 epoch 9, step 45, loss: 16.2, global_step: 405
+2023-03-24 16:47:55,375:INFO: ===========validation / test===========
+2023-03-24 16:47:55,375:INFO: ===========validation / test===========
+2023-03-24 16:49:18,352:INFO: 2023-03-24 16:49:08 epoch 10, step 1, loss: 18.2, global_step: 406
+2023-03-24 16:49:18,352:INFO: 2023-03-24 16:49:08 epoch 10, step 1, loss: 18.2, global_step: 406
+2023-03-24 16:55:07,530:INFO: 2023-03-24 16:49:08 epoch 10, step 45, loss: 16.47, global_step: 450
+2023-03-24 16:55:07,530:INFO: 2023-03-24 16:49:08 epoch 10, step 45, loss: 16.47, global_step: 450
+2023-03-24 16:55:08,424:INFO: ===========validation / test===========
+2023-03-24 16:55:08,424:INFO: ===========validation / test===========
+2023-03-24 16:56:18,745:INFO: 2023-03-24 16:56:12 epoch 11, step 1, loss: 19.46, global_step: 451
+2023-03-24 16:56:18,745:INFO: 2023-03-24 16:56:12 epoch 11, step 1, loss: 19.46, global_step: 451
+2023-03-24 17:02:04,892:INFO: 2023-03-24 16:56:12 epoch 11, step 45, loss: 17.91, global_step: 495
+2023-03-24 17:02:04,892:INFO: 2023-03-24 16:56:12 epoch 11, step 45, loss: 17.91, global_step: 495
+2023-03-24 17:02:05,803:INFO: ===========validation / test===========
+2023-03-24 17:02:05,803:INFO: ===========validation / test===========
+2023-03-24 17:03:20,319:INFO: 2023-03-24 17:03:15 epoch 12, step 1, loss: 7.491, global_step: 496
+2023-03-24 17:03:20,319:INFO: 2023-03-24 17:03:15 epoch 12, step 1, loss: 7.491, global_step: 496
+2023-03-24 17:08:38,920:INFO: 2023-03-24 17:03:15 epoch 12, step 45, loss: 9.825, global_step: 540
+2023-03-24 17:08:38,920:INFO: 2023-03-24 17:03:15 epoch 12, step 45, loss: 9.825, global_step: 540
+2023-03-24 17:08:40,114:INFO: ===========validation / test===========
+2023-03-24 17:08:40,114:INFO: ===========validation / test===========
+2023-03-24 17:10:05,207:INFO: 2023-03-24 17:09:58 epoch 13, step 1, loss: 12.72, global_step: 541
+2023-03-24 17:10:05,207:INFO: 2023-03-24 17:09:58 epoch 13, step 1, loss: 12.72, global_step: 541
+2023-03-24 17:15:33,951:INFO: 2023-03-24 17:09:58 epoch 13, step 45, loss: 14.09, global_step: 585
+2023-03-24 17:15:33,951:INFO: 2023-03-24 17:09:58 epoch 13, step 45, loss: 14.09, global_step: 585
+2023-03-24 17:15:34,906:INFO: ===========validation / test===========
+2023-03-24 17:15:34,906:INFO: ===========validation / test===========
+2023-03-24 17:16:51,478:INFO: 2023-03-24 17:16:44 epoch 14, step 1, loss: 10.9, global_step: 586
+2023-03-24 17:16:51,478:INFO: 2023-03-24 17:16:44 epoch 14, step 1, loss: 10.9, global_step: 586
+2023-03-28 09:04:05,955:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1679643602', dev_ann_data='./ner_data/original', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.001, mode='demo', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='ner_data', train_ann_data='./ner_data/original', train_data='ner_data', update_embedding=True)
+2023-03-28 09:04:06,237:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:44: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2023-03-28 09:04:06,237:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:44: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2023-03-28 09:04:06,240:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:52: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2023-03-28 09:04:06,240:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:52: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2023-03-28 09:04:06,258:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:60: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2023-03-28 09:04:06,258:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:60: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2023-03-28 09:04:06,265:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:64: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2023-03-28 09:04:06,265:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:64: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2023-03-28 09:04:06,303:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:71: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2023-03-28 09:04:06,303:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:71: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2023-03-28 09:04:06,303:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2023-03-28 09:04:06,303:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2023-03-28 09:04:06,360:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:958: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+2023-03-28 09:04:06,360:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:958: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+2023-03-28 09:04:06,367:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:962: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2023-03-28 09:04:06,367:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:962: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2023-03-28 09:04:06,381:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2023-03-28 09:04:06,381:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2023-03-28 09:04:06,513:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:76: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2023-03-28 09:04:06,513:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:76: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2023-03-28 09:04:06,513:WARNING: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2023-03-28 09:04:06,513:WARNING: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2023-03-28 09:04:06,698:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:106: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2023-03-28 09:04:06,698:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:106: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2023-03-28 09:04:06,702:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:117: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2023-03-28 09:04:06,702:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:117: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2023-03-28 09:04:07,582:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:136: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2023-03-28 09:04:07,582:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:136: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2023-03-28 09:04:07,583:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:118: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2023-03-28 09:04:07,583:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:118: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2023-03-28 09:04:07,604:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:119: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2023-03-28 09:04:07,604:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:119: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2023-03-28 09:04:08,652:INFO: Restoring parameters from .\ner_data_save\1679643602\checkpoints/model-585
+2023-03-28 09:04:08,652:INFO: Restoring parameters from .\ner_data_save\1679643602\checkpoints/model-585
+2023-03-28 09:08:59,959:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1679643602', dev_ann_data='./ner_data/original', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.001, mode='demo', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='ner_data', train_ann_data='./ner_data/original', train_data='ner_data', update_embedding=True)
+2023-03-28 09:09:16,443:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1679643602', dev_ann_data='./ner_data/original', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.001, mode='demo', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='ner_data', train_ann_data='./ner_data/original', train_data='ner_data', update_embedding=True)
+2023-03-28 09:09:16,448:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:44: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2023-03-28 09:09:16,448:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:44: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2023-03-28 09:09:16,453:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:52: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2023-03-28 09:09:16,453:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:52: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2023-03-28 09:09:16,475:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:60: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2023-03-28 09:09:16,475:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:60: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2023-03-28 09:09:16,490:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:64: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2023-03-28 09:09:16,490:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:64: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2023-03-28 09:09:16,493:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:71: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2023-03-28 09:09:16,493:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:71: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2023-03-28 09:09:16,494:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2023-03-28 09:09:16,494:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2023-03-28 09:09:16,619:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:958: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+2023-03-28 09:09:16,619:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:958: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+2023-03-28 09:09:16,632:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:962: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2023-03-28 09:09:16,632:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:962: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2023-03-28 09:09:16,668:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2023-03-28 09:09:16,668:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2023-03-28 09:09:16,915:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:76: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2023-03-28 09:09:16,915:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:76: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2023-03-28 09:09:16,916:WARNING: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2023-03-28 09:09:16,916:WARNING: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2023-03-28 09:09:17,308:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:106: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2023-03-28 09:09:17,308:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:106: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2023-03-28 09:09:17,317:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:117: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2023-03-28 09:09:17,317:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:117: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2023-03-28 09:09:19,358:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:136: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2023-03-28 09:09:19,358:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:136: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2023-03-28 09:09:19,360:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:118: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2023-03-28 09:09:19,360:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:118: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2023-03-28 09:09:19,416:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:119: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2023-03-28 09:09:19,416:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:119: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2023-03-28 09:09:20,464:INFO: Restoring parameters from .\ner_data_save\1679643602\checkpoints/model-585
+2023-03-28 09:09:20,464:INFO: Restoring parameters from .\ner_data_save\1679643602\checkpoints/model-585
+2023-03-28 09:16:39,750:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1679643602', dev_ann_data='./ner_data/original', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.001, mode='demo', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='ner_data', train_ann_data='./ner_data/original', train_data='ner_data', update_embedding=True)
+2023-03-28 09:16:39,755:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:44: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2023-03-28 09:16:39,755:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:44: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2023-03-28 09:16:39,760:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:52: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2023-03-28 09:16:39,760:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:52: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2023-03-28 09:16:39,784:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:60: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2023-03-28 09:16:39,784:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:60: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2023-03-28 09:16:39,801:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:64: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2023-03-28 09:16:39,801:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:64: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2023-03-28 09:16:39,804:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:71: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2023-03-28 09:16:39,804:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:71: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2023-03-28 09:16:39,805:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2023-03-28 09:16:39,805:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2023-03-28 09:16:39,928:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:958: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+2023-03-28 09:16:39,928:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:958: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+2023-03-28 09:16:39,940:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:962: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2023-03-28 09:16:39,940:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:962: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2023-03-28 09:16:39,972:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2023-03-28 09:16:39,972:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2023-03-28 09:16:40,208:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:76: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2023-03-28 09:16:40,208:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:76: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2023-03-28 09:16:40,208:WARNING: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2023-03-28 09:16:40,208:WARNING: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2023-03-28 09:16:40,572:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:106: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2023-03-28 09:16:40,572:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:106: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2023-03-28 09:16:40,578:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:117: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2023-03-28 09:16:40,578:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:117: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2023-03-28 09:16:42,337:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:136: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2023-03-28 09:16:42,337:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:136: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2023-03-28 09:16:42,339:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:118: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2023-03-28 09:16:42,339:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:118: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2023-03-28 09:16:42,385:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:119: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2023-03-28 09:16:42,385:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:119: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2023-03-28 09:16:42,516:INFO: Restoring parameters from .\ner_data_save\1679643602\checkpoints/model-585
+2023-03-28 09:16:42,516:INFO: Restoring parameters from .\ner_data_save\1679643602\checkpoints/model-585
+2023-03-28 09:20:49,251:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1679643602', dev_ann_data='./ner_data/original', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.001, mode='demo', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='ner_data', train_ann_data='./ner_data/original', train_data='ner_data', update_embedding=True)
+2023-03-28 09:20:49,255:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:44: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2023-03-28 09:20:49,255:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:44: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2023-03-28 09:20:49,260:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:52: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2023-03-28 09:20:49,260:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:52: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2023-03-28 09:20:49,286:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:60: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2023-03-28 09:20:49,286:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:60: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2023-03-28 09:20:49,302:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:64: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2023-03-28 09:20:49,302:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:64: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2023-03-28 09:20:49,305:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:71: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2023-03-28 09:20:49,305:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:71: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2023-03-28 09:20:49,306:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2023-03-28 09:20:49,306:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2023-03-28 09:20:49,444:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:958: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+2023-03-28 09:20:49,444:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:958: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+2023-03-28 09:20:49,457:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:962: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2023-03-28 09:20:49,457:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:962: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2023-03-28 09:20:49,495:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2023-03-28 09:20:49,495:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2023-03-28 09:20:49,750:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:76: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2023-03-28 09:20:49,750:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:76: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2023-03-28 09:20:49,750:WARNING: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2023-03-28 09:20:49,750:WARNING: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2023-03-28 09:20:50,133:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:106: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2023-03-28 09:20:50,133:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:106: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2023-03-28 09:20:50,140:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:117: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2023-03-28 09:20:50,140:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:117: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2023-03-28 09:20:52,147:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:136: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2023-03-28 09:20:52,147:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:136: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2023-03-28 09:20:52,150:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:118: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2023-03-28 09:20:52,150:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:118: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2023-03-28 09:20:52,210:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:119: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2023-03-28 09:20:52,210:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:119: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2023-03-28 09:20:53,277:INFO: Restoring parameters from .\ner_data_save\1679643602\checkpoints/model-585
+2023-03-28 09:20:53,277:INFO: Restoring parameters from .\ner_data_save\1679643602\checkpoints/model-585
+2023-03-28 09:24:36,064:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1679643602', dev_ann_data='./ner_data/original', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.001, mode='demo', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='ner_data', train_ann_data='./ner_data/original', train_data='ner_data', update_embedding=True)
+2023-03-28 09:24:36,068:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:44: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2023-03-28 09:24:36,068:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:44: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2023-03-28 09:24:36,073:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:52: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2023-03-28 09:24:36,073:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:52: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2023-03-28 09:24:36,109:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:60: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2023-03-28 09:24:36,109:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:60: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2023-03-28 09:24:36,133:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:64: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2023-03-28 09:24:36,133:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:64: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2023-03-28 09:24:36,136:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:71: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2023-03-28 09:24:36,136:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:71: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2023-03-28 09:24:36,137:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2023-03-28 09:24:36,137:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2023-03-28 09:24:36,350:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:958: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+2023-03-28 09:24:36,350:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:958: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+2023-03-28 09:24:36,370:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:962: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2023-03-28 09:24:36,370:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn_cell_impl.py:962: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2023-03-28 09:24:36,410:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2023-03-28 09:24:36,410:WARNING: From E:\project\pythonProject\zh-NER-TF-master\venv\lib\site-packages\tensorflow_core\python\ops\rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2023-03-28 09:24:36,694:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:76: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2023-03-28 09:24:36,694:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:76: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2023-03-28 09:24:36,695:WARNING: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2023-03-28 09:24:36,695:WARNING: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2023-03-28 09:24:37,120:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:106: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2023-03-28 09:24:37,120:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:106: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2023-03-28 09:24:37,127:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:117: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2023-03-28 09:24:37,127:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:117: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2023-03-28 09:24:39,103:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:136: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2023-03-28 09:24:39,103:WARNING: From E:\project\pythonProject\zh-NER-TF-master\model.py:136: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2023-03-28 09:24:39,105:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:118: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2023-03-28 09:24:39,105:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:118: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2023-03-28 09:24:39,156:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:119: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2023-03-28 09:24:39,156:WARNING: From E:\project\pythonProject\zh-NER-TF-master\main.py:119: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2023-03-28 09:24:40,228:INFO: Restoring parameters from .\ner_data_save\1679643602\checkpoints/model-585
+2023-03-28 09:24:40,228:INFO: Restoring parameters from .\ner_data_save\1679643602\checkpoints/model-585
